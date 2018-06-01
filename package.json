@@ -15,6 +15,11 @@
   "testRegex": ".*-test\\.js$",
   "testEnvironment": "node",
   "keywords": [],
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
