@@ -1,0 +1,33 @@
+{
+  "name": "await-on",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/await-on.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --config .eslintrc.js .",
+    "test:watch": "jest --watch",
+    "prepublish": "yarn test && yarn lint && yarn run build",
+    "postpublish": "rm -rf dist",
+    "prebuild": "rm -rf dist",
+    "build": "babel src -d dist"
+  },
+  "testRegex": ".*-test\\.js$",
+  "testEnvironment": "node",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-jest": "^21.17.0",
+    "jest": "^23.0.1",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
