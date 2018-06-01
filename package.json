@@ -1,11 +1,11 @@
 {
   "name": "await-on",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/await-on.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint --config .eslintrc.js .",
+    "lint": "eslint --config .eslintrc.js src",
     "test:watch": "jest --watch",
     "prepublish": "yarn test && yarn lint && yarn run build",
     "postpublish": "rm -rf dist",
